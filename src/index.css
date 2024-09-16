@@ -1,4 +1,47 @@
 :root
 {
-  
+    --Green: #80ff8080;
+    --Yellow: #ffff8080;
+    --Blue: #8080ff80;
+    --Cyan: #80ffff80;
+    --Gray: #80808080;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: 600;
+}
+body
+{
+    background-image: url("./assets/Windows XP.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+article
+{
+    background-color: var(--Green);
+}
+section
+{
+    background-color: var(--Yellow);
+}
+aside
+{
+    background-color: var(--Blue);
+}
+figure, details
+{
+    background-color: var(--Cyan);
+}
+footer
+{
+    background-color: var(--Gray);
+}
+ul{
+    padding: 20px;
 }

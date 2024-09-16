@@ -1,0 +1,80 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.p10
+{
+    padding: 10px;
+}
+.m10
+{
+    margin: 10px;
+}
+.f
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.f2
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.f3
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.b
+{
+    border: 2px solid #000000;
+}
+.wide
+{
+    width: 100%;
+}
+.Aviao
+{
+    position: fixed;
+    top: 3%;
+}
+.FotoRedonda
+{
+    height: 100%;
+    border-radius: 50%;
+}
+.Header
+{
+    width: 20%;
+    height: 100px;
+    justify-content: left;
+    align-items: center;
+    background: linear-gradient(to right, #00c00080, #ffff0080, #0000ff80);
+}
+.text1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    text-wrap: wrap;
+}
+.text2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+.text3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
