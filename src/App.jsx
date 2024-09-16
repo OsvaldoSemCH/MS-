@@ -7,15 +7,15 @@ import Foto from "./assets/Foto.jpg"
 function App() {
   return (
     <>
-  <header className={`${style.f}`} style={{position: 'sticky', top: 0, zIndex: 2, width: '100vw'}}>
-      <div className={`${style.p10} ${style.f} ${style.Header} ${style.b}`} style={{width: '20%', justifySelf: 'flex-start'}}>
+  <header className={`${style.f}`} style={{position: 'sticky', top: 0, zIndex: 2, width: '98vw'}}>
+      <div className={`${style.p10} ${style.m10} ${style.f} ${style.Header} ${style.b}`} style={{width: '20%', justifySelf: 'flex-start'}}>
               <img src={Foto} alt="Foto.jpg" className={`${style.FotoRedonda} ${style.b}`}/>
             <p style={{paddingLeft: '10px'}}>Eduardo Henrique Ribeiro da Silva</p>
         </div>
-      <div className={`${style.p10} ${style.b}`} style={{width: '80%', opacity: '0%'}}></div>
+      <div className={`${style.p10} ${style.m10} ${style.b}`} style={{width: '80%', opacity: '0%'}}></div>
     </header>
-  <main className={`${style.f}`} style={{width: '100vw'}}>
-      <aside className={`${style.p10} ${style.b} ${style.f}`} style={{width: '20%', flexDirection: 'column', justifyContent: 'flex-start', zIndex: 1, wordBreak: 'break-word'}}>
+  <main className={`${style.f}`} style={{width: '98vw'}}>
+      <aside className={`${style.p10} ${style.b} ${style.m10} ${style.f}`} style={{width: '20%', flexDirection: 'column', justifyContent: 'flex-start', zIndex: 1, wordBreak: 'break-word'}}>
             <a target='_blank' href="https://github.com/OsvaldoComCH">
               <figure className={`${style.p10} ${style.b} ${style.f2}`}>
                     <img
@@ -44,18 +44,26 @@ function App() {
           </div> */}
         </aside>
         
-      <article className={`${style.p10} ${style.b}`} style={{width: '80%', zIndex: 3}}>
+      <article className={`${style.p10} ${style.m10} ${style.b}`} style={{width: '80%', zIndex: 3}}>
           <p className={`${style.text3}`}>
                 Bom Dia
             </p>
           <p className={`${style.text1}`}>
             </p>
-          <section className={`${style.p10} ${style.b}`}>
+          <section className={`${style.p10} ${style.m10} ${style.b}`}>
+            <ul className={`${style.text1}`}>
+                <a href='#Sobre'><li>Sobre</li></a>
+                <a><li></li></a>
+                <a href='#Projetos'><li>Projetos</li></a>
+                <a><li></li></a>
+            </ul>
+          </section>
+          <section className={`${style.p10} ${style.m10} ${style.b}`} id='Sobre'>
               <p className={`${style.text2}`}>
                     Sobre
                 </p>
               <p className={`${style.text1}`}>Me chamo Eduardo Ribeiro, sou programador, principalmente em C e C++. Gosto da área de otimização e programação em linguagens de baixo nível.</p>
-              <details className={`${style.p10} ${style.b}`}>
+              <details className={`${style.p10} ${style.m10} ${style.b}`}>
                   <summary className={`${style.p10} ${style.text2}`}>Formação</summary>
                   <ul className={`${style.text1}`}>
                         <li>Informática Básica e Programação - Microlins (2020)</li>
@@ -64,12 +72,7 @@ function App() {
                         <li>Curso Técnico em Desenvolvimento de Sistemas - SENAI (Em andamento)</li>
                     </ul>
                 </details>
-            </section>
-          <section className={`${style.p10} ${style.b}`}>
-              <p className={`${style.text2}`}>
-                    Habilidades
-                </p>
-              <details className={`${style.p10} ${style.b}`}>
+              <details className={`${style.p10} ${style.m10} ${style.b}`}>
                   <summary className={`${style.p10} ${style.text2}`}>Coisas que eu sei:
                       <sub className={`${style.text1}`} style={{fontSize: '10px'}}>(mas não me considero muito bom)</sub>
                     </summary>
@@ -86,7 +89,7 @@ function App() {
                         <li>Git</li>
                     </ul>
                 </details>
-              <details className={`${style.p10} ${style.b}`}>
+              <details className={`${style.p10} ${style.m10} ${style.b}`}>
                   <summary className={`${style.p10} ${style.text2}`}>Coisas em que eu sou bom:</summary>
                   <ul className={`${style.text1}`}>
                         <li>C</li>
@@ -96,13 +99,13 @@ function App() {
                     </ul>
                 </details>
             </section>
-          <section className={`${style.p10} ${style.b}`}>
+          <section className={`${style.p10} ${style.m10} ${style.b}`} id='Projetos'>
 
               <p className={`${style.text2}`}>
                     Projetos
                 </p>
 
-              <details className={`${style.p10} ${style.b} ${style.text1}`}>
+              <details className={`${style.p10} ${style.m10} ${style.b} ${style.text1}`}>
                   <summary className={`${style.p10} ${style.text2}`}>Tetris_CPP:</summary>
                     Um jogo de Tetris para Windows x64, feito completamente em C++, sem o uso de qualquer biblioteca externa. 
                     O objetivo é que ele se torne um clone perfeito de Tetris, e eu quero adicionar algum tipo de inteligência artificial.
@@ -112,13 +115,13 @@ function App() {
                     <br/><br/>
                   <img className={`${style.b}`} src="https://github.com/OsvaldoComCH/OsvaldoComCH/raw/main/Tetris.png" alt="Tetris" width="60%"/>
                     <br/><br/>
-                    A última versão pode ser encontrada <a target='_blank' href="https://github.com/OsvaldoComCH/Tetris_CPP/releases/latest">aqui</a>
+                    A última versão pode ser encontrada <a target='_blank' href="https://github.com/OsvaldoComCH/Tetris_CPP/releases/latest">aqui </a>
                     e o código está disponível em:
                     <br/>
                     <a target='_blank' href="https://github.com/OsvaldoComCH/Tetris_CPP">https://github.com/OsvaldoComCH/Tetris_CPP</a>
                 </details>
                 
-              <details className={`${style.p10} ${style.b} ${style.text1}`}>
+              <details className={`${style.p10} ${style.m10} ${style.b} ${style.text1}`}>
                   <summary className={`${style.p10} ${style.text2}`}>Ternaria:</summary>
                     Este jogo foi desenvolvido por
                     <a target='_blank' href="https://github.com/AmiltonMn">Amilton</a>,
@@ -132,7 +135,7 @@ function App() {
                     <br/><br/>
                   <img className={`${style.b}`} src={Ternaria} alt="Ternaria" width="100%"/>
                     <br/><br/>
-                    A última versão pode ser encontrada <a target='_blank' href="https://github.com/OsvaldoComCH/Ternaria/releases/latest">aqui</a>
+                    A última versão pode ser encontrada <a target='_blank' href="https://github.com/OsvaldoComCH/Ternaria/releases/latest">aqui </a>
                     e o código está disponível em:
                     <br/>
                     <a target='_blank' href="https://github.com/OsvaldoComCH/Ternaria">https://github.com/OsvaldoComCH/Ternaria</a>
@@ -142,7 +145,7 @@ function App() {
                     e do Fernando: <a target='_blank' href="https://github.com/Fernandohka/Ternaria">https://github.com/Fernandohka/Ternaria</a>
                 </details>
 
-              <details className={`${style.p10} ${style.b} ${style.text1}`}>
+              <details className={`${style.p10} ${style.m10} ${style.b} ${style.text1}`}>
                   <summary className={`${style.p10} ${style.text2}`}>QuickerSort:</summary>
                     Visto a meu interesse por otimizações, em algum momento eu teria que aprender assembly,
                     então, depois de aprender o básico, eu tentei otimizar o Quicksort, que é um dos melhores
@@ -161,7 +164,7 @@ function App() {
             <img src={Aviao} alt="Aviao.png" width="5%"/>
         </marquee>
     </main>
-  <footer style={{clear: 'both'}} className={`${style.p10} ${style.b} ${style.text1} ${style.f3}`}>
+  <footer style={{clear: 'both', width: "98vw"}} className={`${style.p10} ${style.b} ${style.text1} ${style.f3} ${style.m10}`}>
   <a target='_blank' href="https://github.com/OsvaldoComCH">
               <figure className={`${style.p10} ${style.b} ${style.f2}`}>
                     <img
