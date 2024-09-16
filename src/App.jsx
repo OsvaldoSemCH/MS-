@@ -12,7 +12,7 @@ function App() {
               <img src={Foto} alt="Foto.jpg" className={`${style.FotoRedonda} ${style.b}`}/>
             <p style={{paddingLeft: '10px'}}>Eduardo Henrique Ribeiro da Silva</p>
         </div>
-      <div className={`${style.p10} ${style.m10} ${style.b}`} style={{width: '80%', opacity: '0%'}}></div>
+      <div className={`${style.p10} ${style.m10} ${style.b} ${style.InvisDiv}`} style={{opacity: '0%'}}></div>
     </header>
   <main className={`${style.f}`} style={{width: '98vw'}}>
       <aside className={`${style.p10} ${style.b} ${style.m10} ${style.f}`} style={{width: '20%', flexDirection: 'column', justifyContent: 'flex-start', zIndex: 1, wordBreak: 'break-word'}}>

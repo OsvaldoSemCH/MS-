@@ -78,3 +78,18 @@
     font-size: x-large;
     font-weight: bold;
 }
+.InvisDiv
+{
+    width: 80%;
+}
+@media (width <= 1000px)
+{
+    .Header
+    {
+        width: 100vw;
+    }
+    .InvisDiv
+    {
+        width: 0%;
+    }
+}
