@@ -43,10 +43,6 @@ figure, details
 {
     background-color: var(--Cyan);
 }
-footer
-{
-    background-color: var(--Gray);
-}
 ul{
     padding: 20px;
 }

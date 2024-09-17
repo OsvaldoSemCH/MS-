@@ -27,6 +27,7 @@
 }
 .f3
 {
+    background-color: var(--Gray);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -54,7 +55,9 @@
 .Header
 {
     width: 20%;
+    z-index: 2;
     height: 100px;
+    justify-self: flex-start;
     justify-content: left;
     align-items: center;
     background: linear-gradient(to right, #00c00080, #ffff0080, #0000ff80);
@@ -65,31 +68,79 @@
     font-size: large;
     font-weight: 500;
     text-wrap: wrap;
+    word-wrap: break-word;
 }
 .text2
 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     font-weight: bold;
+    word-wrap: break-word;
+    text-wrap: wrap;
 }
 .text3
 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
     font-weight: bold;
+    word-wrap: break-word;
+    text-wrap: wrap;
 }
 .InvisDiv
 {
     width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+.FullHeader
+{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 98vw;
+}
+.Aside
+{
+    width: 20%;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    word-break: break-word;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #000000;
+}
+.Article
+{
+    width: 80%;
+    z-index: 3;
 }
 @media (width <= 1000px)
 {
     .Header
     {
-        width: 100vw;
+        width: 100%;
+    }
+    .FullHeader
+    {
+        z-index: 9;
     }
     .InvisDiv
     {
         width: 0%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .Aside
+    {
+        width: 0%;
+        opacity: 0%;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+    }
+    .Article
+    {
+        width: 100%;
     }
 }

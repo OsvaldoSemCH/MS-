@@ -7,15 +7,15 @@ import Foto from "./assets/Foto.jpg"
 function App() {
   return (
     <>
-  <header className={`${style.f}`} style={{position: 'sticky', top: 0, zIndex: 2, width: '98vw'}}>
-      <div className={`${style.p10} ${style.m10} ${style.f} ${style.Header} ${style.b}`} style={{width: '20%', justifySelf: 'flex-start'}}>
+  <header className={`${style.f} ${style.FullHeader}`}>
+      <div className={`${style.p10} ${style.m10} ${style.f} ${style.Header} ${style.b}`} style={{}}>
               <img src={Foto} alt="Foto.jpg" className={`${style.FotoRedonda} ${style.b}`}/>
             <p style={{paddingLeft: '10px'}}>Eduardo Henrique Ribeiro da Silva</p>
         </div>
-      <div className={`${style.p10} ${style.m10} ${style.b} ${style.InvisDiv}`} style={{opacity: '0%'}}></div>
+      <div className={`${style.InvisDiv}`} style={{opacity: '0%'}}></div>
     </header>
   <main className={`${style.f}`} style={{width: '98vw'}}>
-      <aside className={`${style.p10} ${style.b} ${style.m10} ${style.f}`} style={{width: '20%', flexDirection: 'column', justifyContent: 'flex-start', zIndex: 1, wordBreak: 'break-word'}}>
+      <aside className={`${style.f} ${style.Aside}`}>
             <a target='_blank' href="https://github.com/OsvaldoComCH">
               <figure className={`${style.p10} ${style.b} ${style.f2}`}>
                     <img
@@ -44,7 +44,7 @@ function App() {
           </div> */}
         </aside>
         
-      <article className={`${style.p10} ${style.m10} ${style.b}`} style={{width: '80%', zIndex: 3}}>
+      <article className={`${style.p10} ${style.m10} ${style.b} ${style.Article}`}>
           <p className={`${style.text3}`}>
                 Bom Dia
             </p>
@@ -106,7 +106,7 @@ function App() {
                 </p>
 
               <details className={`${style.p10} ${style.m10} ${style.b} ${style.text1}`}>
-                  <summary className={`${style.p10} ${style.text2}`}>Tetris_CPP:</summary>
+                  <summary className={`${style.text2}`}>Tetris_CPP:</summary>
                     Um jogo de Tetris para Windows x64, feito completamente em C++, sem o uso de qualquer biblioteca externa. 
                     O objetivo é que ele se torne um clone perfeito de Tetris, e eu quero adicionar algum tipo de inteligência artificial.
                     <br/><br/>
@@ -122,11 +122,11 @@ function App() {
                 </details>
                 
               <details className={`${style.p10} ${style.m10} ${style.b} ${style.text1}`}>
-                  <summary className={`${style.p10} ${style.text2}`}>Ternaria:</summary>
+                  <summary className={`${style.text2}`}>Ternaria:</summary>
                     Este jogo foi desenvolvido por
-                    <a target='_blank' href="https://github.com/AmiltonMn">Amilton</a>,
-                    <a target='_blank' href="https://github.com/Fernandohka">Fernando</a>,
-                    e eu, como projeto para a disciplina de Lógica de Programação em nosso curso no SENAI.
+                    <a target='_blank' href="https://github.com/AmiltonMn"> Amilton</a>,
+                    <a target='_blank' href="https://github.com/Fernandohka"> Fernando</a>,
+                     e eu, como projeto para a disciplina de Lógica de Programação em nosso curso no SENAI.
                     Ele foi feito em C, usando a API do Windows para renderizar.
                     <br/><br/>
                     Nós queriamos fazer uma cópia do Terraria, e tinhamos apenas 2 semanas e meia para fazer.
@@ -146,7 +146,7 @@ function App() {
                 </details>
 
               <details className={`${style.p10} ${style.m10} ${style.b} ${style.text1}`}>
-                  <summary className={`${style.p10} ${style.text2}`}>QuickerSort:</summary>
+                  <summary className={`${style.text2}`}>QuickerSort:</summary>
                     Visto a meu interesse por otimizações, em algum momento eu teria que aprender assembly,
                     então, depois de aprender o básico, eu tentei otimizar o Quicksort, que é um dos melhores
                     algoritmos de ordenação.
@@ -155,35 +155,37 @@ function App() {
                     Embora ele tenha ficado mais rápido, eu tenho algumas ideias melhores pra adicionar, e,
                     no futuro, eu quero fazer uma DLL com esta e mais subrotinas otimizadas.
                     <br/><br/>
-                  <img className={`${style.b}`} src={AsmQuicksort} alt="AsmQuicksort"/>
+                  <img className={`${style.b}`} src={AsmQuicksort} alt="AsmQuicksort" width="100%" style={{maxWidth: '300px'}}/>
                 </details>
 
             </section>
         </article>
-      <marquee className={`${style.Aviao}`} style={{zIndex: 6}}>
-            <img src={Aviao} alt="Aviao.png" width="5%"/>
-        </marquee>
     </main>
-  <footer style={{clear: 'both', width: "98vw"}} className={`${style.p10} ${style.b} ${style.text1} ${style.f3} ${style.m10}`}>
-  <a target='_blank' href="https://github.com/OsvaldoComCH">
-              <figure className={`${style.p10} ${style.b} ${style.f2}`}>
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s"
-                        alt="Github"
-                        className={`${style.FotoRedonda}`}
-                        width="60px"
-                    />
-                  <figcaption className={`${style.p10} ${style.text1}`}>OsvaldoComCH</figcaption>
-                </figure>
-            </a>
-          <figure className={`${style.p10} ${style.b} ${style.f2}`}>
-                <img
-                    src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/mail.png"
-                    alt="Email"
-                    width="60px"
-                />
-              <figcaption className={`${style.text1}`} style={{fontSize: 'small'}}>EduardoHenriqueRibeiroBrasil@gmail.com</figcaption>
-            </figure>
+      <marquee className={`${style.Aviao}`} style={{zIndex: 10}}>
+            <img src={Aviao} alt="Aviao.png" width="100px"/>
+        </marquee>
+  <footer style={{clear: 'both', width: '98vw', wordBreak: 'break-word', textWrap: 'wrap'}}>
+    <div className={`${style.p10} ${style.b} ${style.text1} ${style.f3} ${style.m10}`}>
+    <a target='_blank' href="https://github.com/OsvaldoComCH">
+                <figure className={`${style.p10} ${style.b} ${style.f2}`}>
+                      <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s"
+                          alt="Github"
+                          className={`${style.FotoRedonda}`}
+                          width="60px"
+                      />
+                    <figcaption className={`${style.p10} ${style.text1}`}>OsvaldoComCH</figcaption>
+                  </figure>
+              </a>
+            <figure className={`${style.p10} ${style.b} ${style.f2}`}>
+                  <img
+                      src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/mail.png"
+                      alt="Email"
+                      width="60px"
+                  />
+                <figcaption className={`${style.text1}`} style={{fontSize: 'small'}}>EduardoHenriqueRibeiroBrasil@gmail.com</figcaption>
+              </figure>
+      </div>
     </footer>
     </>
   )
