@@ -3,6 +3,8 @@ import Aviao from './assets/Aviao.png'
 import AsmQuicksort from './assets/AsmQuicksort.png'
 import Ternaria from './assets/Ternaria.png'
 import Foto from "./assets/Foto.jpg"
+import Github from "./assets/Github.jpg"
+import mail from "./assets/mail.webp"
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
             <a target='_blank' href="https://github.com/OsvaldoComCH">
               <figure className={`${style.p10} ${style.b} ${style.f2}`}>
                     <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s"
+                        src={Github}
                         alt="Github"
                         className={`${style.FotoRedonda}`}
                         width="60px"
@@ -29,7 +31,7 @@ function App() {
             </a>
           <figure className={`${style.p10} ${style.b} ${style.f2}`}>
                 <img
-                    src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/mail.png"
+                    src={mail}
                     alt="Email"
                     width="60px"
                 />
@@ -162,14 +164,14 @@ function App() {
         </article>
     </main>
       <marquee className={`${style.Aviao}`} style={{zIndex: 10}}>
-            <img src={Aviao} alt="Aviao.png" width="100px"/>
+            <img src={Aviao} alt="Aviao.png" width="110px"/>
         </marquee>
   <footer style={{clear: 'both', width: '98vw', wordBreak: 'break-word', textWrap: 'wrap'}}>
     <div className={`${style.p10} ${style.b} ${style.text1} ${style.f3} ${style.m10}`}>
     <a target='_blank' href="https://github.com/OsvaldoComCH">
                 <figure className={`${style.p10} ${style.b} ${style.f2}`}>
                       <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s"
+                          src={Github}
                           alt="Github"
                           className={`${style.FotoRedonda}`}
                           width="60px"
@@ -179,7 +181,7 @@ function App() {
               </a>
             <figure className={`${style.p10} ${style.b} ${style.f2}`}>
                   <img
-                      src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/mail.png"
+                      src={mail}
                       alt="Email"
                       width="60px"
                   />
