@@ -5,6 +5,7 @@ import Ternaria from './assets/Ternaria.png'
 import Foto from "./assets/Foto.jpg"
 import Github from "./assets/Github.jpg"
 import mail from "./assets/mail.webp"
+import Whatsapp from "./assets/Whatsapp.png"
 
 function App() {
   return (
@@ -55,9 +56,9 @@ function App() {
           <section className={`${style.p10} ${style.m10} ${style.b}`}>
             <ul className={`${style.text1}`}>
                 <a href='#Sobre'><li>Sobre</li></a>
-                <a><li></li></a>
+                <a href='#Profissional'><li>Histórico Profissional</li></a>
                 <a href='#Projetos'><li>Projetos</li></a>
-                <a><li></li></a>
+                <a href='#Contato'><li>Contato</li></a>
             </ul>
           </section>
           <section className={`${style.p10} ${style.m10} ${style.b}`} id='Sobre'>
@@ -66,7 +67,7 @@ function App() {
                 </p>
               <p className={`${style.text1}`}>Me chamo Eduardo Ribeiro, sou programador, principalmente em C e C++. Gosto da área de otimização e programação em linguagens de baixo nível.</p>
               <details className={`${style.p10} ${style.m10} ${style.b}`}>
-                  <summary className={`${style.p10} ${style.text2}`}>Formação</summary>
+                  <summary className={`${style.text2}`}>Formação</summary>
                   <ul className={`${style.text1}`}>
                         <li>Informática Básica e Programação - Microlins (2020)</li>
                         <li>Inglês Avançado - Microlins (2021)</li>
@@ -75,7 +76,7 @@ function App() {
                     </ul>
                 </details>
               <details className={`${style.p10} ${style.m10} ${style.b}`}>
-                  <summary className={`${style.p10} ${style.text2}`}>Coisas que eu sei:
+                  <summary className={`${style.text2}`}>Coisas que eu sei:
                       <sub className={`${style.text1}`} style={{fontSize: '10px'}}>(mas não me considero muito bom)</sub>
                     </summary>
                   <ul className={`${style.text1}`}>
@@ -92,7 +93,7 @@ function App() {
                     </ul>
                 </details>
               <details className={`${style.p10} ${style.m10} ${style.b}`}>
-                  <summary className={`${style.p10} ${style.text2}`}>Coisas em que eu sou bom:</summary>
+                  <summary className={`${style.text2}`}>Coisas em que eu sou bom:</summary>
                   <ul className={`${style.text1}`}>
                         <li>C</li>
                         <li>C++</li>
@@ -101,6 +102,21 @@ function App() {
                     </ul>
                 </details>
             </section>
+
+          <section className={`${style.p10} ${style.m10} ${style.b}`} id='Profissional'>
+            <p className={`${style.text2}`}>
+              Histórico Profissional
+            </p>
+              <details className={`${style.p10} ${style.m10} ${style.b}`}>
+                  <summary className={`${style.text2}`}>Bosch</summary>
+                  Desde fevereiro de 2024 sou aprendiz em Soluções Digitais para a Bosch, em Curitiba
+                </details>
+              <details className={`${style.p10} ${style.m10} ${style.b}`}>
+                <summary className={`${style.text2}`}>É só isso</summary>
+                Era só isso mesmo
+              </details>
+          </section>
+
           <section className={`${style.p10} ${style.m10} ${style.b}`} id='Projetos'>
 
               <p className={`${style.text2}`}>
@@ -161,10 +177,47 @@ function App() {
                 </details>
 
             </section>
+            <section className={`${style.p10} ${style.m10} ${style.b}`} id='Contato'>
+              <p className={`${style.text2}`}>
+                Contato
+              </p>
+              <div className={`${style.f}`}>
+                <a target='_blank' href="https://github.com/OsvaldoComCH">
+                  <figure className={`${style.p10} ${style.m10} ${style.b} ${style.f2}`}>
+                        <img
+                            src={Github}
+                            alt="Github"
+                            className={`${style.FotoRedonda}`}
+                            width="60px"
+                        />
+                      <figcaption className={`${style.p10} ${style.text1}`}>OsvaldoComCH</figcaption>
+                    </figure>
+                </a>
+                <figure className={`${style.p10} ${style.m10} ${style.b} ${style.f2}`}>
+                    <img
+                        src={mail}
+                        alt="Email"
+                        width="60px"
+                    />
+                  <figcaption className={`${style.text1}`} style={{fontSize: 'small'}}>EduardoHenriqueRibeiroBrasil@gmail.com</figcaption>
+                </figure>
+                <a target='_blank' href="https://wa.me/5543999999999">
+                  <figure className={`${style.p10} ${style.m10} ${style.b} ${style.f2}`}>
+                        <img
+                            src={Whatsapp}
+                            alt="Whatsapp"
+                            className={`${style.FotoRedonda}`}
+                            width="60px"
+                        />
+                      <figcaption className={`${style.p10} ${style.text1}`}>(XX) XXXXX-XXXX</figcaption>
+                    </figure>
+                </a>
+              </div>
+            </section>
         </article>
     </main>
       <marquee className={`${style.Aviao}`} style={{zIndex: 10}}>
-            <img src={Aviao} alt="Aviao.png" width="110px"/>
+            <img src={Aviao} alt="Aviao.png" width="110px" height='auto'/>
         </marquee>
   <footer style={{clear: 'both', width: '98vw', wordBreak: 'break-word', textWrap: 'wrap'}}>
     <div className={`${style.p10} ${style.b} ${style.text1} ${style.f3} ${style.m10}`}>
