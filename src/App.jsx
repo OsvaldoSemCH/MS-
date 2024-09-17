@@ -182,25 +182,6 @@ function App() {
                 Contato
               </p>
               <div className={`${style.f}`}>
-                <a target='_blank' href="https://github.com/OsvaldoComCH">
-                  <figure className={`${style.p10} ${style.m10} ${style.b} ${style.f2}`}>
-                        <img
-                            src={Github}
-                            alt="Github"
-                            className={`${style.FotoRedonda}`}
-                            width="60px"
-                        />
-                      <figcaption className={`${style.p10} ${style.text1}`}>OsvaldoComCH</figcaption>
-                    </figure>
-                </a>
-                <figure className={`${style.p10} ${style.m10} ${style.b} ${style.f2}`}>
-                    <img
-                        src={mail}
-                        alt="Email"
-                        width="60px"
-                    />
-                  <figcaption className={`${style.text1}`} style={{fontSize: 'small'}}>EduardoHenriqueRibeiroBrasil@gmail.com</figcaption>
-                </figure>
                 <a target='_blank' href="https://wa.me/5543999999999">
                   <figure className={`${style.p10} ${style.m10} ${style.b} ${style.f2}`}>
                         <img
